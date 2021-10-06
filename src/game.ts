@@ -39,8 +39,7 @@ poapBooth.addComponentOrReplace(transform3)
 const channelId = Math.random().toString(16).slice(2)
 const channelBus = new MessageBus()
 const inventory = createInventory(UICanvas, UIContainerStack, UIImage)
-const options = { inventory }
 
 const script1 = new Script1()
-script1.init(options)
+script1.init()
 script1.spawn(poapBooth, {}, createChannel(channelId, poapBooth, channelBus))
